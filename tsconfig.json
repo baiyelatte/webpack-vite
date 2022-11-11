@@ -38,6 +38,6 @@
     "types/**/*.d.ts",
     "types/**/*.ts",
     "vite.config.ts"
-  ],
+, "src/main.js"  ],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

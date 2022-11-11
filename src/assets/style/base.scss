@@ -1,0 +1,116 @@
+body,
+html {
+  line-height: 1;
+  font-family: "PingFang SC", "STHeitiSC-Light", "Helvetica-Light", arial,
+    sans-serif, "Droid Sans Fallback";
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  background: $color-background;
+  color: $color-666;
+  padding: 0;
+  margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.loginbox {
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 60px 0;
+    img {
+      width: 150px;
+    }
+  }
+}
+.main-home {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+.header .van-nav-bar__title {
+  width: 74%;
+  max-width: inherit;
+}
+.header-box {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.home-bodys {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  // display: flex;
+}
+.h10 {
+  height: 10px;
+}
+.van-nav-bar .van-icon,
+.van-nav-bar__text {
+  color: #7a7a7a;
+}
+.goodsbox {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.van-checkbox__icon--checked .van-icon {
+  background-color: #ee0a24;
+  border-color: #ee0a24;
+}
+.btnbox {
+  margin: 0px auto;
+  width: 90%;
+  padding-top: 40px;
+}
+.forms {
+  margin-top: 10px;
+  background: #fff;
+  .tits {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+.dyjico {
+  position: relative;
+  padding-left: 26px;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: text-bottom;
+  font-size: 13px !important;
+  &::after {
+    font-size: 12px;
+    color: #999;
+    content: "+";
+    width: 12px;
+    position: absolute;
+    left: 2px;
+    top: 0;
+    text-align: center;
+  }
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(../../assets/image/common/jb.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 13px;
+    top: 2px;
+  }
+}

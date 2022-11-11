@@ -1,4 +1,13 @@
+/*
+ * @Date: 2022-11-10 15:13:45
+ * @LastEditors: baiyelatte baiyelatte@gmail.com
+ * @LastEditTime: 2022-11-11 14:23:30
+ * @FilePath: \vite_vue2.7\.eslintrc.cjs
+ */
 module.exports = {
+  globals: {
+    LukeappApi: true
+  },
   root: true,
 
   env: {
@@ -19,6 +28,7 @@ module.exports = {
   },
 
   rules: {
+    'vue/require-prop-type-constructor': 'off',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
@@ -31,29 +41,14 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      {
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-      },
-    ],
-    'vue/multi-word-component-names': [
-      'error',
-      {
-        ignores: ['index'], //需要忽略的组件名
-      },
-    ],
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        tabWidth: 2,
-        singleQuote: true,
-        semi: false,
-        endOfLine: 'auto',
-      },
-    ],
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-unused-vars': 'off',
+    'vue/return-in-computed-property': 'off',
+    'vue/valid-define-props': 'off',
+    'vue/no-reserved-component-names': 'off',
+    'prettier/prettier': 'off',
+    'vue/multi-word-component-names': 'off',
+    'no-console': import.meta.env.VITE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': import.meta.env.VITE_ENV === 'production' ? 'warn' : 'off',
   },
 }
