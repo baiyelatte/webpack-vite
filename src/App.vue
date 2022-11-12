@@ -6,7 +6,7 @@
  * @FilePath: \mallh5\src\App.vue
 -->
 <template>
-  <div class="main" v-if="true">
+  <div class="main" v-if="isShow">
     <keep-alive>
       <router-view
         v-if="$route.meta.keepAlive"
